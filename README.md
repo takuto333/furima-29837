@@ -30,8 +30,6 @@
 | days_to_ship     | integer    | null: false                    |
 | description      | text       | null: false                    |
 | price            | integer    | null: false                    |
-| sales_commission | integer    | null: false                    |
-| sales_profit     | integer    | null: false                    |
 | user_id          | references | null: false, foreign_key: true |
 
 ### Association

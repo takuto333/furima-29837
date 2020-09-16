@@ -23,6 +23,11 @@
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
 | name             | string     | null: false                    |
+| category         | string     | null: false                    |
+| condition        | string     | null: false                    |
+| shipping_charges | string     | null: false                    |
+| shipping_area    | string     | null: false                    |
+| days_to_ship     | string     | null: false                    |
 | description      | text       | null: false                    |
 | price            | integer    | null: false                    |
 | sales_commission | integer    | null: false                    |

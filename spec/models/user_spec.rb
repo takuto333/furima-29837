@@ -53,8 +53,8 @@ RSpec.describe User, type: :model do
         expect(@user.errors.full_messages).to include('Password please set including both half-width letters and numbers')
       end
       it 'passwordが6文字以上でも英字のみでは登録できない' do
-        @user.password = '123456'
-        @user.password_confirmation = '123456'
+        @user.password = 'aaaaaa'
+        @user.password_confirmation = 'aaaaaa'
         @user.valid?
         expect(@user.errors.full_messages).to include('Password please set including both half-width letters and numbers')
       end

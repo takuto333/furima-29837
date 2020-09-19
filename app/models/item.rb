@@ -17,7 +17,7 @@ class Item < ApplicationRecord
     validates :shipping_charges_id
     validates :shipping_area_id
     validates :days_to_ship_id
-    validates :description, length: {maximum: 1000}
+    validates :description, length: { maximum: 1000 }
     validates :price, numericality: { greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }
   end
 

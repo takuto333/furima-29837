@@ -14,7 +14,7 @@ class Item < ApplicationRecord
     validates :name, length: { maximum: 40 }
     validates :category_id
     validates :condition_id
-    validates :shipping_charges_id
+    validates :shipping_charge_id
     validates :shipping_area_id
     validates :days_to_ship_id
     validates :description, length: { maximum: 1000 }
@@ -24,7 +24,7 @@ class Item < ApplicationRecord
   with_options numericality: { other_than: 1 } do
     validates :category_id
     validates :condition_id
-    validates :shipping_charges_id
+    validates :shipping_charge_id
     validates :shipping_area_id
     validates :days_to_ship_id
   end

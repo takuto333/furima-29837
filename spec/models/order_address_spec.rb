@@ -40,7 +40,7 @@ RSpec.describe OrderAddress, type: :model do
       it 'prefecture_idが--に該当するid番号だと購入できない' do
         @order_address.prefecture_id = 0
         @order_address.valid?
-        expect(@order_address.errors.full_messages).to include("Prefecture must be other than 0")
+        expect(@order_address.errors.full_messages).to include('Prefecture must be other than 0')
       end
       it 'municipalityがなければ購入できない' do
         @order_address.municipality = ''

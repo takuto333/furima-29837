@@ -1,5 +1,6 @@
 FactoryBot.define do
   factory :order_address do
+    token         { Faker::Lorem.sentence}
     postal_code   { Faker::Number.number(digits: 7).to_s.insert(3, '-') }
     prefecture_id { Faker::Number.between(from: 1, to: 47) }
     municipality  { Gimei.city.kanji }
